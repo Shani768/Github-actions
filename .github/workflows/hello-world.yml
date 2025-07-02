@@ -1,0 +1,12 @@
+name: Hello World
+
+# Trigger: run this workflow on every push
+on: [push]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World from GitHub Actions!"
