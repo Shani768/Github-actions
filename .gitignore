@@ -1,1 +1,3 @@
 node_modules/
+flask-backend/venv/
+flask-backend/__pycache__
