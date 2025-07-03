@@ -1,0 +1,26 @@
+name: Daily Report Generator
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:      # Allows manual triggering
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate report
+        run: |
+          echo "📅 Daily Report for $(date)" > daily_report.txt
+          echo "✅ Status: All systems operational" >> daily_report.txt
+          echo "📊 Data: $(date +%s)" >> daily_report.txt
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report
+          path: daily_report.txt
