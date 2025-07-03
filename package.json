@@ -1,0 +1,24 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to use **GitHub Actions** to automate tasks like building, testing, and deploying your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shani768/Github-actions.git"  
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shani768/Github-actions/issues"
+  },
+  "homepage": "https://github.com/shani768/Github-actions#readme",
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
+}
